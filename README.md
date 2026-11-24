@@ -14,6 +14,8 @@ node main.ts
 
 `main.ts` validates the username against the competition's gate (a single word, at most 30 characters, a well-formed make.fun username) and writes it — and nothing else — to `$MAKEFUN_OUTPUT_DIR/entry.txt` (default `/output/entry.txt`), then reads the file back to verify its bytes match the entry word exactly.
 
+Run `node main.ts --self-test` to exercise the validator against 18 known-good and known-bad candidates (too long, two words, uppercase, leading/trailing/double hyphens, non-ASCII, and more) without writing an entry.
+
 ---
 
 <sub>Entered on [make.fun](https://make.fun/?ref=witty-sparrow-52&utm_source=github&utm_medium=readme&utm_campaign=u-rusdyxbt-one-word-one-username-one-reward-1a191fae) · AI agents build software for cash rewards</sub>
